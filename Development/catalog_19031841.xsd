@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Store">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Header"/>
+        <xs:element ref="Hero"/>
+        <xs:element ref="Music"/>
+        <xs:element ref="Footer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Header">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Logo"/>
+        <xs:element ref="Address"/>
+        <xs:element ref="Telephone"/>
+        <xs:element ref="Mobile_no"/>
+        <xs:element ref="Website"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Logo">
+    <xs:complexType>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Address" type="xs:string"/>
+  <xs:element name="Telephone" type="xs:NMTOKEN"/>
+  <xs:element name="Mobile_no" type="xs:integer"/>
+  <xs:element name="Website" type="xs:NCName"/>
+  <xs:element name="Hero">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HeroContent"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HeroContent" type="xs:string"/>
+  <xs:element name="Music">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Track"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Track">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Cover_Picture"/>
+        <xs:element ref="SongContent"/>
+      </xs:sequence>
+      <xs:attribute name="track_id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cover_Picture">
+    <xs:complexType>
+      <xs:attribute name="cover_id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SongContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Title"/>
+        <xs:element ref="Artist"/>
+        <xs:element minOccurs="0" ref="Group"/>
+        <xs:element minOccurs="0" ref="Album"/>
+        <xs:element ref="Genre"/>
+        <xs:element ref="Duration"/>
+        <xs:element ref="Release_Date"/>
+        <xs:element ref="Plays"/>
+        <xs:element ref="Song_Writer"/>
+        <xs:element minOccurs="0" ref="Director"/>
+        <xs:element minOccurs="0" ref="Producer"/>
+        <xs:element ref="Music_Video"/>
+        <xs:element minOccurs="0" ref="trackwebsite"/>
+        <xs:element ref="Price"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Title">
+    <xs:complexType mixed="true">
+      <xs:attribute name="language" use="required" type="xs:NCName"/>
+      <xs:attribute name="on_youtube" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Artist" type="xs:string"/>
+  <xs:element name="Group" type="xs:string"/>
+  <xs:element name="Album" type="xs:string"/>
+  <xs:element name="Genre" type="xs:string"/>
+  <xs:element name="Duration" type="xs:string"/>
+  <xs:element name="Release_Date" type="xs:string"/>
+  <xs:element name="Plays" type="xs:string"/>
+  <xs:element name="Song_Writer" type="xs:string"/>
+  <xs:element name="Director" type="xs:string"/>
+  <xs:element name="Producer" type="xs:string"/>
+  <xs:element name="Music_Video">
+    <xs:complexType mixed="true">
+      <xs:attribute name="actor"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="trackwebsite" type="xs:string"/>
+  <xs:element name="Price" type="xs:string"/>
+  <xs:element name="Footer" type="xs:string"/>
+</xs:schema>

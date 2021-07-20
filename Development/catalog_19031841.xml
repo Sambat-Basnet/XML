@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="catalog_19031841.css" type="text/css"?>
+<!DOCTYPE Store SYSTEM "./catalog_19031841.dtd">
+
+<!--
+    Coursework 2
+    XML
+    Author: Yam Narayan Basnet
+    Date: 2nd May 2021
+    Filename: catalog_19031841.xml
+ -->
+ <!-- Store is the root element -->
+<Store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="catalog_19031841.xsd">
+
+    <!-- Header consists of logo and store information -->
+    <Header>
+            <Logo id="Img"/>
+            <Address>Baluwatar, Kathmandu</Address>
+            <Telephone>01-4018293</Telephone>
+            <Mobile_no>9813245686</Mobile_no>
+            <Website>www.yaminmusic.com</Website>
+    </Header>
+    <!-- Hero element consists of a tag line -->
+    <Hero>
+        <HeroContent>Blessing your ears since the 90s</HeroContent>
+    </Hero>
+    <!-- Music element consists of Track and Song information -->
+    <Music>
+        <Track track_id="T1">
+            <Cover_Picture cover_id="Cover_1"/>
+            <!-- Song content consists of the information of the song -->
+            <SongContent>  
+            <Title on_youtube="Yes" language="English">Bohemian Rhapsody</Title>
+            <Artist>Artist: Freddie Mercury</Artist>
+            <Group>Group: Queen</Group>
+            <Album>Album: Live Killers</Album>
+            <Genre>Genre: Rock</Genre>
+            <Duration>Duration: 5:55</Duration>
+            <Release_Date>Released Year: 1975</Release_Date>
+            <Plays>Plays: 1,483,289,766</Plays>
+            <Song_Writer>Song Writer: Freddie Mercury</Song_Writer>
+            <Producer>Producer: Roy Thomas Baker</Producer>
+            <Music_Video>Music Video: Yes</Music_Video>
+            <trackwebsite>Website: https://www.queenonline.com/</trackwebsite>
+            <Price>$12.99</Price>
+            </SongContent>
+        </Track>
+        <Track track_id="T2">
+            <Cover_Picture cover_id="Cover_2"/>
+            <SongContent>  
+            <Title on_youtube="Yes" language="English">Heather</Title>
+            <Artist>Artist: Conan Grey</Artist>
+            <Album>Album: Kid Crow</Album>
+            <Genre>Genre: Folk</Genre>
+            <Duration>Duration: 3:18</Duration>
+            <Release_Date>Released Year: 2020</Release_Date>
+            <Plays>Plays: 583,789,166</Plays>
+            <Song_Writer>Song Writer: Conan Grey</Song_Writer>
+            <Producer>Producer: Daniel Nigro</Producer>
+            <Music_Video>Music Video: Yes</Music_Video>
+            <Price>$10.99</Price>
+            </SongContent>  
+        </Track>
+        <Track track_id="T3">
+            <Cover_Picture cover_id="Cover_3"/>
+            <SongContent>  
+            <Title on_youtube="Yes" language="English">Driver's license</Title>
+            <Artist>Artist: Olivia Rodrigo</Artist>
+            <Album>Album: Driver's license</Album>
+            <Genre>Genre: Pop</Genre>
+            <Duration>Duration: 4:02</Duration>
+            <Release_Date>Released Year: 2021</Release_Date>
+            <Plays>Plays: 239,989,766</Plays>
+            <Song_Writer>Song Writer: Olivia Rodrigo <![CDATA[ & ]]> Daniel Nigro</Song_Writer>
+            <Producer>Producer: Daniel Nigro</Producer>
+            <Music_Video actor ="Olivia Rodrigo">Music Video: Yes</Music_Video>
+            <Price>$8.99</Price>
+            </SongContent>  
+        </Track>
+        <Track track_id="T4">
+            <Cover_Picture cover_id="Cover_4"/>
+            <SongContent>  
+            <Title language="English">Everything I wanted</Title>
+            <Artist>Artist: Billie Eillish</Artist>
+            <Album>Album: Everything I wanted</Album>
+            <Genre>Genre: Pop</Genre>
+            <Duration>Duration: 4:05</Duration>
+            <Release_Date>Released Year: 2019</Release_Date>
+            <Plays>Plays: 2,193,659,195</Plays>
+            <Song_Writer>Song Writer: Billie Eillish</Song_Writer>
+            <Music_Video actor="Billie Eillish">Music Video: Yes</Music_Video>
+            <Price>$9.99</Price>
+            </SongContent>
+        </Track>
+        <Track track_id="T5">
+            <Cover_Picture cover_id="Cover_5"/>
+            <SongContent>  
+            <Title language="English">Pillow Talk</Title>
+            <Artist>Artist: Zayn Malik</Artist>
+            <Album>Album: Mind Of Mine</Album>
+            <Genre>Genre: RnB</Genre>
+            <Duration>Duration: 3:23</Duration>
+            <Release_Date>Released Year: 2016</Release_Date>
+            <Plays>Plays: 1,893,679,206</Plays>
+            <Song_Writer>Song Writer: Zayn Malik</Song_Writer>
+            <Producer>Producer: Levi Lennon</Producer>
+            <Music_Video actor= "Gigi Hadid">Music Video: Yes</Music_Video>
+            <Price>$15.99</Price>
+            </SongContent>
+
+        </Track>
+        <Track track_id="T6">
+            <Cover_Picture cover_id="Cover_6"/>
+            <SongContent>  
+            <Title language="Hindi">Vaaste</Title>
+            <Artist>Artist: Dhvani Bhanushali <![CDATA[ & ]]> Nikhil D' Souza</Artist>
+            <Genre>Genre: Pop</Genre>
+            <Duration>Duration: 4:06</Duration>
+            <Release_Date>Released Year: 2019</Release_Date>
+            <Plays>Plays: 988,189,155</Plays>
+            <Song_Writer>Song Writer: Arafar Mehmood</Song_Writer>
+            <Producer>Producer: Bhusan Kumar</Producer>
+            <Music_Video actor= "Dhvani Bhanushali">Music Video: Yes</Music_Video>
+            <Price>$5.99</Price>
+            </SongContent>
+        </Track>
+        <Track track_id="T7">
+            <Cover_Picture cover_id="Cover_7"/>
+            <SongContent>  
+            <Title on_youtube="Yes" language="Hindi">Pachtaoge</Title>
+            <Artist>Artist: Arijit Singh</Artist>
+            <Album>Album: Pachtaoge</Album>
+            <Genre>Genre: Pop</Genre>
+            <Duration>Duration: 4:30</Duration>
+            <Release_Date>Released Year: 2019</Release_Date>
+            <Plays>Plays: 2,623,189,466</Plays>
+            <Song_Writer>Song Writer : Jaani</Song_Writer>
+            <Music_Video>Music Video: Yes</Music_Video>
+            <trackwebsite>Website: https://twitter.com/TheArijitSingh</trackwebsite>
+            <Price>$4.99</Price>             
+            </SongContent>
+        </Track>
+        <Track track_id="T8">
+            <Cover_Picture cover_id="Cover_8"/>
+            <SongContent>  
+            <Title language="English">The Lady in Red</Title>
+            <Artist>Artist: Chris de Burgh</Artist>
+            <Album>Album: Into the Light</Album>
+            <Genre>Genre: Soft rock</Genre>
+            <Duration>Duration: 4:17</Duration>
+            <Release_Date>Released Year: 1986</Release_Date>
+            <Plays>Plays: 2,203,489,266</Plays>
+            <Song_Writer>Song Writer: Chris de Burgh</Song_Writer>
+            <Producer>Producer: Paul Hardiman</Producer>
+            <Music_Video>Music Video: No</Music_Video>
+            <Price>$22.99</Price>
+            </SongContent>
+        </Track>
+        <Track track_id="T9">
+            <Cover_Picture cover_id="Cover_9"/>
+            <SongContent>  
+            <Title language="English">2002</Title>
+            <Artist>Artist: Anne Marie</Artist>
+            <Album>Album: Speak Your Mind</Album>
+            <Genre>Genre: Pop</Genre>
+            <Duration>Duration: 3:07</Duration>
+            <Release_Date>Released Year: 2018</Release_Date>
+            <Plays>Plays: 623,189,466</Plays>
+            <Song_Writer>Song Writer: Anne Marie</Song_Writer>
+            <Producer>Producer: Steve Mac</Producer>
+            <Music_Video>Music Video: Yes</Music_Video>
+            <Price>$11.99</Price>
+            </SongContent>
+        </Track>
+        <Track track_id="T10">
+            <Cover_Picture cover_id="Cover_10"/>
+            <SongContent>  
+            <Title language="English">Shape of You</Title>
+            <Artist>Artist: Ed Sheeran</Artist>
+            <Album>Album: %</Album>
+            <Genre>Genre: Pop</Genre>
+            <Duration>Duration: 3:53</Duration>
+            <Release_Date>Released Year: 2017</Release_Date>
+            <Plays>Plays: 3,523,289,566</Plays>
+            <Song_Writer>Song Writer: Ed Sheeran</Song_Writer>
+            <Producer>Producer: Steve Mac</Producer>
+            <Music_Video>Music Video: Yes</Music_Video>
+            <Price>$10.99</Price>
+            </SongContent>
+        </Track>
+        <Track track_id="T11">
+            <Cover_Picture cover_id="Cover_11"/>
+            <SongContent>  
+            <Title language="English">Hey Jude</Title>
+            <Artist>Artist: Paul McCartney</Artist>
+            <Group>Group: The Beatles</Group>
+            <Album>Album: Hey Jude</Album>
+            <Genre>Genre: Pop rock</Genre>
+            <Duration>Duration: 7:11</Duration>
+            <Release_Date>Released Year: 1968</Release_Date>
+            <Plays>Plays: 2,223,279,766</Plays>
+            <Song_Writer>Song Writer: Lennon–McCartney</Song_Writer>
+            <Producer>Producer: George Martin</Producer>
+            <Music_Video>Music Video: Yes</Music_Video>
+            <Price>$8.99</Price>
+            </SongContent>
+        </Track>
+        <Track track_id="T12">
+            <Cover_Picture cover_id="Cover_12"/>
+            <SongContent>  
+            <Title language="English">Cheerleader</Title>
+            <Artist>Artist: Omi</Artist>
+            <Album>Album: Me 4 U</Album>
+            <Genre>Genre: Reggae fusion</Genre>
+            <Duration>Duration: 2:58</Duration>
+            <Release_Date>Released Year: 2012</Release_Date>
+            <Plays>Plays: 303,989,866</Plays>
+            <Song_Writer>Song Writer: Omar Samuel Pasley</Song_Writer>
+            <Producer>Producer: Feliz Jaehn</Producer>
+            <Music_Video>Music Video: Yes</Music_Video>
+            <Price>$7.99</Price>
+            </SongContent>
+        </Track>
+        <Track track_id="T13">
+            <Cover_Picture cover_id="Cover_13"/>
+            <SongContent>  
+            <Title language="English">Someone You Loved</Title>
+            <Artist>Artist: Lewis Capaldi</Artist>
+            <Album>Album: Divinely Uninspired to a Hellish Extent</Album>
+            <Genre>Genre: Pop</Genre>
+            <Duration>Duration: 3:02</Duration>
+            <Release_Date>Released Year: 2012</Release_Date>
+            <Plays>Plays: 1,203,589,886</Plays>
+            <Song_Writer>Song Writer: Lewis Capaldi</Song_Writer>
+            <Producer>Producer: TMS</Producer>
+            <Music_Video>Music Video: Yes</Music_Video>
+            <Price>$14.99</Price>
+            </SongContent>
+        </Track>
+        <Track track_id="T14">
+            <Cover_Picture cover_id="Cover_14"/>
+            <SongContent>  
+            <Title language="English">All I Want</Title>
+            <Artist>Artist: Steve Garrigan</Artist>
+            <Group>Group: Kodaline</Group>
+            <Album>Album: In a Perfect World</Album>
+            <Genre>Genre: Rock</Genre>
+            <Duration>Duration: 3:58</Duration>
+            <Release_Date>Released Year: 2013</Release_Date>
+            <Plays>Plays: 1,202,979,966</Plays>
+            <Song_Writer>Song Writer: James Flannigan</Song_Writer>
+            <Director>Stevie Russell</Director>
+            <Producer>Producer  Stephan Harris</Producer>
+            <Music_Video actor="Bryan Hussel">Music_Video: Yes</Music_Video>
+            <Price>$9.99</Price>
+            </SongContent>
+        </Track>
+        <Track track_id="T15">
+            <Cover_Picture cover_id="Cover_15"/>
+            <SongContent>  
+            <Title language="English">Changes</Title>
+            <Artist>Artist: XXXTentacion</Artist>
+            <Genre>Genre: RnB</Genre>
+            <Duration>Duration: 2:02</Duration>
+            <Release_Date>Released Year: 2018</Release_Date>
+            <Plays>Plays: 903,689,766</Plays>
+            <Song_Writer>Song Writer: Jahseh Onfroy</Song_Writer>
+            <Producer>Producer: Cunningham</Producer>
+            <Music_Video>Music Video: No</Music_Video>
+            <Price>$7.99</Price>
+            </SongContent>
+        </Track>
+    </Music>
+    <!-- Footer of the site -->
+    <Footer>YamInc Pvt. Ltd. | Copyright  &#xA9; 2021</Footer>
+</Store>

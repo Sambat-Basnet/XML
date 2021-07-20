@@ -1,0 +1,52 @@
+<!--
+    Coursework 2
+    DTD
+    Author: Yam Narayan Basnet
+    Date: 2nd May 2021
+    Filename: catalog_19031841.dtd
+ -->
+
+<!-- Element declaration -->
+
+<!ELEMENT Store (Header, Hero, Music, Footer)>
+<!ELEMENT Header (Logo, Address, Telephone, Mobile_no, Website)>
+<!ELEMENT Logo EMPTY>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Telephone (#PCDATA)>
+<!ELEMENT Mobile_no (#PCDATA)>
+<!ELEMENT Website (#PCDATA)>
+<!ELEMENT Hero (HeroContent)>
+<!ELEMENT HeroContent (#PCDATA)>
+<!ELEMENT Music (Track+)>
+<!ELEMENT Track (Cover_Picture, SongContent)>
+<!ELEMENT SongContent (Title, Artist, Group?, Album?, Genre, 
+                    Duration, Release_Date, Plays, Song_Writer, Director?, 
+                    Producer?, Music_Video,trackwebsite?, Price)>
+<!ELEMENT Cover_Picture (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Artist (#PCDATA)>
+<!ELEMENT Group (#PCDATA)>
+<!ELEMENT Album (#PCDATA)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT Duration (#PCDATA)>
+<!ELEMENT Release_Date (#PCDATA)>
+<!ELEMENT Plays (#PCDATA)>
+<!ELEMENT Song_Writer (#PCDATA)>
+<!ELEMENT Director (#PCDATA)>
+<!ELEMENT Producer (#PCDATA)>
+<!ELEMENT Music_Video (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT trackwebsite (#PCDATA)>
+<!ELEMENT Footer (#PCDATA)>
+
+<!-- Attribute declaration -->
+
+<!ATTLIST Store 
+xmlns:xsi CDATA #REQUIRED
+xsi:noNamespaceSchemaLocation CDATA #REQUIRED
+>
+<!ATTLIST Logo id CDATA #REQUIRED>
+<!ATTLIST Track track_id ID #REQUIRED>
+<!ATTLIST Cover_Picture cover_id ID #REQUIRED>
+<!ATTLIST Title on_youtube CDATA #IMPLIED language CDATA #REQUIRED>
+<!ATTLIST Music_Video actor CDATA #IMPLIED>

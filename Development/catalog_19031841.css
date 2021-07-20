@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+Store{
+    display: flex;
+    flex-direction: column;
+}
+/* Header content */
+Header{
+    /* background-color: blue; */
+    display: list-item;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+Header  Address, Telephone, Website{
+    font-weight: 600;
+}
+
+Header Logo{
+    background: url('./assets/logo.svg');
+    height: 100px;
+    margin-top: 4.4rem;
+    width: 100px;
+    background-repeat: no-repeat;
+}
+
+
+Header Mobile_no{
+    display: none;
+}
+/* styling for hero tag */
+Hero{
+    height: 80vh;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+Hero HeroContent{
+    padding: 0 20px !important;
+    font-weight: 700;
+    width: 60vw;
+    text-align: center;
+    font-size: 5.5rem;
+    border:2px solid black;
+}
+
+/* styling for the floating body */
+Music{
+    /* background-color: #c8c6a7; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 15rem;
+    padding-top: 30px;
+    font-family:'Poppins', sans-serif !important ;
+    /* color:white; */
+}
+
+
+Music Track{
+    display: flex;
+    
+    
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+Music Track:nth-child(odd){
+    flex-direction: row;
+    
+}
+
+Music Track:nth-child(odd) SongContent{
+    min-width: 400px;
+    /* height:100%; */
+      position:absolute; 
+     top:0;
+    right:0;  
+}
+
+Music Track:nth-child(even){
+    flex-direction: row-reverse;
+    
+}
+
+Music Track:nth-child(even) SongContent{
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+/* styling for the cover picture */
+Music Track Cover_Picture{
+    
+    min-height: 500px;
+    min-width: 500px;
+    max-height: 501px;
+    max-width: 501px;
+    background:black;
+    background-size: 90% !important;
+    background-repeat: no-repeat !important;
+}
+
+/* styling for image card */
+
+Music Track:nth-child(1) Cover_Picture{
+   background:url("./assets/bohemian.png");   
+}
+
+Music Track:nth-child(2) Cover_Picture{
+     background:url("./assets/heather.jpeg");   
+ }
+ Music Track:nth-child(3) Cover_Picture{
+     background:url("./assets/driverslicence.jpeg");   
+ }
+ Music Track:nth-child(4) Cover_Picture{
+     background:url("./assets/everythingiwanted.jpeg");
+     background-position: bottom;   
+ }
+ 
+ Music Track:nth-child(5) Cover_Picture{
+     background:url("./assets/pillowtalk.jpeg");   
+ }
+ Music Track:nth-child(6) Cover_Picture{
+     background:url("./assets/vaaste.jpeg");   
+ }
+ Music Track:nth-child(7) Cover_Picture{
+     background:url("./assets/pachtaoge.jpg");   
+ }
+ Music Track:nth-child(8) Cover_Picture{
+     background:url("./assets/ladyinred.jpg");   
+ }
+ 
+ Music Track:nth-child(9) Cover_Picture{
+     background:url("./assets/2002.jpeg");   
+ }
+ 
+ Music Track:nth-child(10) Cover_Picture{
+    background:url("./assets/shapeofyou.jpeg");   
+}
+
+Music Track:nth-child(11) Cover_Picture{
+    background:url("./assets/heyjude.jpeg");   
+}
+
+Music Track:nth-child(12) Cover_Picture{
+    background:url("./assets/cheerleader.jpeg");   
+}
+
+Music Track:nth-child(13) Cover_Picture{
+    background:url("./assets/someoneyouloved.jpeg");   
+}
+
+Music Track:nth-child(14) Cover_Picture{
+    background:url("./assets/alliwant.jpeg");   
+}
+
+Music Track:nth-child(15) Cover_Picture{
+    background:url("./assets/changes.jpeg");   
+}
+
+SongContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+SongContent Title, Artist, Group, Album, Genre, Duration, 
+            Release_Date, Plays, Song_Writer, Director, Producer,
+            Music_Video, Price, trackwebsite{
+                font-family:'Raleway', sans-serif;
+                padding: 6px;
+                font-weight: 600;
+            }
+
+SongContent Title{
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+    color: white;
+    width: fit-content;
+    background-color: black;
+    padding: 10px 8px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+SongContent Title:hover{
+    background-color: #fafafa;
+    color: black;
+    font-family:'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+SongContent Price{
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+/* styling for footer */
+Footer{
+    height: 12vh;
+    background-color: black;
+    color: #f4f4f4;
+    font-family:'Poppins', sans-serif;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
